@@ -265,18 +265,13 @@ Hint: Be sure to declare and initialize the total variable before the iterations
 
 Complete Exercise 15 in the space below:
 */
-
-for (let i = 0; i < numArrays.length; i++) {
-    let element = numArrays[i];
-
-  for(let j=i+1 ; i<numArrays.length;j++){
-
-   let element2 = numArrays[j];
-  }
-
-  
-  
-}
-let total = element+element2; 
+  let total=0;
+    for(let i=0;i<numArrays.length;i++){
+       for (let j=0;j<numArrays[i].length;j++){
+           total+= numArrays[i][j]; 
+      } 
+            
+ }
 
 console.log('Exercise 15 result:', total);
+
